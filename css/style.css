@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+html{
+    font-size: 62.5%;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.botones__cel{
+    display: none;
+}
+.container{
+    border-radius: 15px; 
+    margin: 0 auto;
+    border: 5px solid #000;
+    width: 720px;
+    height: auto;
+    background:#022325; 
+    display: flex;
+}
+
+.canvas{
+    background:#68c2c8 ;
+    width: 350px;
+    height: 700px;
+    margin:20px 0px 20px 20px;
+}
+/*----------container styles information-----------*/
+.info{
+    height: 700px;
+    width: 300px;
+    background: #1f7277;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.info__{
+    font-family: 'VT323', monospace;
+    color:#FFF ;
+    font-size:4rem;
+    display: flex;
+    flex-direction: column; 
+    height: 50%; 
+}
+.info__description{
+    margin: 10px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+.info__proxima{
+    width: 80%;
+    height: 20%;
+    background: #C4C4C4;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.info__button{
+border: 4px solid #000;
+color: #000;
+padding: 3px 10px;
+border-radius: 8px;
+margin: 0 auto;
+cursor: pointer;
+font-family: 'VT323', monospace;
+font-size:4rem;
+
+}
+.info__button:hover{
+    color:#FFF;
+    background: #000;
+}
+@media screen and (max-width:1100px){
+    .info__{
+        /* font-size: 40px; */
+    }
+    .info__button{
+        font-size: 40px; 
+    }
+}
+   
+@media screen and (max-width:1000px){
+    
+    .info__{
+        font-size: 40px;
+    }
+   
+}
+@media screen and (max-width:650px){
+    
+    .container{
+        width: 100%;
+    }
+    
+    .info__button{
+        padding: 3px 10px;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:600px){
+    
+    .canvas{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .info__{
+        font-size: 2.5rem;
+        
+    
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .info{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90%;
+        height: 30%;
+        align-items: center;
+
+    }
+    .info__description{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+    .info__button{
+        padding: 3px 10px;
+        margin-bottom: 30px;
+        font-size: 3.5rem;
+        
+        
+    }
+    .info__proxima{
+        width: 50%;
+        height: 150px;
+        margin: 10px;
+    }
+    .info__1,.info__2,.info__3{
+        display: flex;
+    }
+    .canvas{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:400px){
+    .info__proxima{
+        height: 120px;
+
+    }
+    .container{
+        border: none;
+    }
+    .info__ h1{
+        font-size: 6x;
+    }
+    .info{
+        height: 25%;
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+    .info__description{
+        grid-row-start: info;
+        grid-row-end: info;
+    }
+    .info__button{
+        grid-area: button;
+        padding: 0;
+    
+        
+    }
+    
+    .info__{
+        font-size: 2.5rem;
+        width: 100%;
+        ma
+    
+    }
+    .botones__cel{
+        display: flex;
+        width: 90%;
+        height: 15%;
+        justify-content: center;
+        margin: 0 auto;
+        background: #1f7277;
+        margin-top: 10px;
+    }
+    .button__cel-icon{
+        font-size: 3rem;
+        color: #FFF;
+        background: #1f7277;
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+}
