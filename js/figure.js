@@ -4,7 +4,9 @@ class Figure {
       //Variable to define the amount of rotations in each figure
       this.rotation;
       //Variable to count when the rotation reaches the limit of each figure
-      this.count = 0;
+        this.count = 0;
+        //Variable to asign a color 
+        this.color;
     }
     //Method to rotate the figure respect a middle point
     rotate() {}
@@ -19,7 +21,8 @@ class Figure {
         [2, 5],
         [2, 6],
       ];
-      this.rotation = 4;
+        this.rotation = 4;
+        this.color = "red";
     }
   
     rotate() {
@@ -67,7 +70,8 @@ class Figure {
         [2, 4],
         [2, 5],
       ];
-      this.rotation = 4;
+        this.rotation = 4;
+        this.color = "blue";
     }
     rotate() {
       if (this.count == 0) {
@@ -115,7 +119,8 @@ class Figure {
         [1, 5],
         [1, 6],
       ];
-      this.rotation = 2;
+        this.rotation = 2;
+        this.color = "green";
     }
     rotate() {
       if (this.count == 0) {
@@ -148,7 +153,8 @@ class Figure {
         [1, 5],
         [1, 4],
       ];
-      this.rotation = 2;
+        this.rotation = 2;
+        this.color = "yellow";
     }
     rotate() {
       if (this.count == 0) {
@@ -181,7 +187,8 @@ class Figure {
         [1, 5],
         [1, 6],
       ];
-      this.rotation = 0;
+        this.rotation = 0;
+        this.color = "pink";
     }
     
   }
@@ -195,14 +202,15 @@ class Figure {
         [0, 5],
         [1, 4],
       ];
-      this.rotation = 4;
+        this.rotation = 4;
+        this.color = "orange";
     }
     rotate() {
       if (this.count == 0) {
         this.coordinates[0][0] = this.coordinates[1][0] - 1;
         this.coordinates[0][1] = this.coordinates[1][1];       
         this.coordinates[2][0] = this.coordinates[1][0] + 1;    
-        this.coordinates[2][1] = this.coordinates[1][1] ;       
+        this.coordinates[2][1] = this.coordinates[1][1];       
         this.coordinates[3][0] = this.coordinates[1][0];
         this.coordinates[3][1] = this.coordinates[1][1] - 1;    
   
@@ -245,7 +253,8 @@ class Figure {
         [2, 5],
         [3, 5],
       ];
-      this.rotation = 2;
+        this.rotation = 2;
+        this.color = "brown";
     }
     rotate() {
       if (this.count == 0) {
