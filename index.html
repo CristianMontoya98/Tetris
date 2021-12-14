@@ -8,35 +8,61 @@
     
 </head>
 <body>
+
+    <h1>TETRIS</h1>
+    
     <div class="container">
+        <div class="message">
+            <h2>INSTRUCCIONES</h2>
+            <h2>W : Girar figura</h2>
+            <h2>A : Mover izquierda</h2>
+            <h2>S : Mover abajo</h2>
+            <h2>D : Mover Derecha</h2>
+            <button class=" info__button" id="play2">JUGAR</button>
+        </div>
         <div class="botones__cel">
             <button class="button__cel-icon"><i class="fas fa-arrow-alt-circle-left"></i></button>
             <button class="button__cel-icon"><i class="fas fa-arrow-alt-circle-right"></i></button>
             <button class="button__cel-icon"><i class="fas fa-redo"></i></button>
         </div>
         <div class="canvas">
-            <canvas id="canva" widht="350" height="700"></canvas>
+            <canvas id="canva" width="350" height="700" >
+            </canvas>
+            
         </div>
+        
         <div class="info">
             <div class="info__proxima"></div>
             <div class="info__description">
                 <div class="info__1">
-                    <h1 class="info__ info__text-points">PUNTOS:</h1>
-                    <h1 class="info__ info__value-points"> 10.000</h1>
+                    <h2 class="info__ info__text-points">PUNTOS:</h2>
+                    <h2 class="info__ info__value-points" id="puntos"> 0</h2>
                 </div>
                 <div class="info__2">
-                    <h1 class="info__ info__text-level">NIVEL:</h1>
-                    <h1 class="info__ info__value-level"> 2</h1>
+                    <h2 class="info__ info__text-level">NIVEL:</h2>
+                    <h2 class="info__ info__value-level" id="nivel"> 0</h2>
                 </div>
                 <div class="info__3">
-                    <h1 class="info__ info__text-lines">LINEAS:</h1>
-                    <h1 class="info__ info__value-lines"> 4</h1>
+                    <h2 class="info__ info__text-lines">LINEAS:</h2>
+                    <h2 class="info__ info__value-lines" id="lineas"> 0</h2>
                 </div>
-                <button class=" info__button">JUGAR</button>
+                <button class=" info__button" id="play">JUGAR</button>
             </div>
         </div>
         
     </div>
+    <footer>
+        <section class="footer">
+            <p>Tetris para bootcamp programate</p>
+            <p>Cristian Montoya</p>
+            <p>Sebastian Murcia</p>
+            <p>2021©</p>
+            <div class="logos">
+            <a href="https://github.com/CristianMontoya98" target="_blank"><img src="img/FinalC.png" alt=""></a>
+            <a href="https://github.com/jsmurcia" target="_blank"><img id="redondear" src="img/logo.png" alt=""></a>
+            </div>
+        </section>
+    </footer>
 </body>
 <script src="js/main.js" type='module'></script>
 <script src="https://kit.fontawesome.com/a2977c897f.js" crossorigin="anonymous"></script>
