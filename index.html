@@ -13,12 +13,12 @@
     
     <div class="container">
         <div class="message">
-            <h2>INSTRUCCIONES</h2>
-            <h2>W : Girar figura</h2>
-            <h2>A : Mover izquierda</h2>
-            <h2>S : Mover abajo</h2>
-            <h2>D : Mover Derecha</h2>
-            <button class=" info__button" id="play2">JUGAR</button>
+            <h2 id="text">INSTRUCCIONES</h2>
+            <h2 id="textPoints">W : Girar figura</h2>
+            <h2 id="textMoveL">A : Mover izquierda</h2>
+            <h2 id="textMoveR">S : Mover abajo</h2>
+            <h2 id="textMoveD">D : Mover Derecha</h2>
+            <button class="info__button" id="play2">JUGAR</button>
         </div>
         <div class="botones__cel">
             <button class="button__cel-icon"><i class="fas fa-arrow-alt-circle-left"></i></button>
@@ -32,7 +32,9 @@
         </div>
         
         <div class="info">
-            <div class="info__proxima"></div>
+            <div class="info__proxima">
+                <canvas id="nextImage" width="130" height="130"></canvas>
+            </div>
             <div class="info__description">
                 <div class="info__1">
                     <h2 class="info__ info__text-points">PUNTOS:</h2>
@@ -46,7 +48,7 @@
                     <h2 class="info__ info__text-lines">LINEAS:</h2>
                     <h2 class="info__ info__value-lines" id="lineas"> 0</h2>
                 </div>
-                <button class=" info__button" id="play">JUGAR</button>
+                
             </div>
         </div>
         

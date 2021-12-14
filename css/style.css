@@ -83,8 +83,8 @@ h1{
 
 }
 .info__proxima{
-    width: 80%;
-    height: 20%;
+    width: 130px;
+    height: 130px;
     background: #C4C4C4;
     border-radius: 3px;
     margin: 0 auto;
@@ -151,6 +151,10 @@ font-size:4rem;
     .info__{
         font-size: 40px;
     }
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
    
 }
 @media screen and (max-width:650px){
@@ -165,7 +169,12 @@ font-size:4rem;
     }
 }
 @media screen and (max-width:600px){
-    
+    h1{
+        font-size:6rem ;
+    }
+    .message h2{
+        font-size: 4rem;
+    }
     .canvas{
         width: 90%;
         margin-bottom: 20px;
@@ -175,13 +184,28 @@ font-size:4rem;
         
     
     }
+    
+    .canvas{
+        margin: 0 auto;
+        width: 267px;
+        height: 535px;
+    }
+    #canva{
+        width: 267px;
+        height: 535px;
+
+    }
     .container{
         flex-direction: column-reverse;
+        border: none;
     }
     .info{
+        margin: 0px;
+        
+        
         display: flex;
         flex-direction: row-reverse;
-        width: 90%;
+        width: 100%;
         height: 30%;
         align-items: center;
 
@@ -200,51 +224,13 @@ font-size:4rem;
         
     }
     .info__proxima{
-        width: 50%;
-        height: 150px;
+        
         margin: 10px;
     }
     .info__1,.info__2,.info__3{
         display: flex;
     }
-    .canvas{
-        margin: 0 auto;
-    }
-}
-@media screen and (max-width:400px){
-    .info__proxima{
-        height: 120px;
-
-    }
-    .container{
-        border: none;
-    }
-    .info__ h2{
-        font-size: 6x;
-    }
-    .info{
-        height: 25%;
-        width: 100%;
-        margin-left: 0px;
-        
-    }
-    .info__description{
-        grid-row-start: info;
-        grid-row-end: info;
-    }
-    .info__button{
-        grid-area: button;
-        padding: 0;
     
-        
-    }
-    
-    .info__{
-        font-size: 2.5rem;
-        width: 100%;
-        
-    
-    }
     .botones__cel{
         display: flex;
         width: 90%;
@@ -261,5 +247,43 @@ font-size:4rem;
         margin-left: 20px;
         padding: 10px;
     }
+    .logos img{
+        width: 15rem;
+    }
+    #redondear{
+        width: 18rem;
+    }
+}
+@media screen and (max-width:400px){
+    h1{
+        font-size: 5rem;
+        margin: 1rem;
+    }
+    
+    
+    .info__ h2{
+        font-size: 6px;
+    }
+    .info{
+        height: 15%;
+        width: 100%;
+        
+    }
+    .info__description{
+        grid-row-start: info;
+        grid-row-end: info;
+    }
+    
+    
+    .info__{
+        font-size: 2.5rem;
+        width: 100%;
+        
+    
+    }
+    .logos{
+        flex-direction: column;
+    }
+    
 
 }
