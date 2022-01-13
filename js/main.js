@@ -8,6 +8,9 @@ let textP = document.getElementById("textPoints");
 let textLv = document.getElementById("textMoveL");
 let textLn = document.getElementById("textMoveR");
 let textIn = document.getElementById("textMoveD");
+let btnLeft = document.getElementById("btn-left");
+let btnRight = document.getElementById("btn-right");
+let btnRotate = document.getElementById("btn-rotate");
 /* definition of the variables to be 
 used */
 let canvas;
@@ -401,6 +404,30 @@ function moveLeft(fig) {
 
 //Function to validate the key that is pressed and asign a movement
 function movements() {
+
+  btnLeft.addEventListener('click', (ev) => {
+    moveLeft(figure);
+      paintScenario();
+      paintFigure(figure);
+  });
+
+  btnRight.addEventListener('click', (ev) => {
+    moveRight(figure);
+      paintScenario();
+      paintFigure(figure);
+  });
+
+  btnRotate.addEventListener('click', (ev) => {
+    paintScenario();
+
+      figure.rotate();
+      figure.count++;
+      if (figure.count >= figure.rotation) {
+        figure.count = 0;
+      }
+      paintFigure(figure);
+  });
+
   document.addEventListener("keydown", (push) => {
     if (push.key == "d") {
       moveRight(figure);
@@ -456,6 +483,7 @@ function fixedFigure(fig) {
   for (let i = 0; i < fig.coordinates.length; i++) {
     scenario[fig.coordinates[i][0]][fig.coordinates[i][1]] = elemento;
   }
+
   figure = figure2;
   figure2 = randomFigure();
   cleanNext();
@@ -545,7 +573,6 @@ function start() {
   movements();
   
   setInterval(function () {
-  
     paintScenario();
     paintFigure(figure);
     moveDown(figure);
