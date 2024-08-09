@@ -255,7 +255,6 @@ function screenLose() {
     }
   
   inter = 500;
-  console.log(inter);
   }
   
   
